@@ -1,0 +1,13 @@
+{
+    "common":{
+        "task": "test",
+        "num_classes":1,
+        "img_folder": "/data/saumgupta/simple-unet-2d/data/DRIVE/test/images",
+        "gt_folder": "/data/saumgupta/simple-unet-2d/data/DRIVE/test/1st_manual",
+        "checkpoint_restore":"/data/saumgupta/simple-unet-2d/train-log/topo/model_best.pth"
+    },
+    "test":{
+        "test_datalist":"/data/saumgupta/simple-unet-2d/datalists/DRIVE/list-test.csv",
+        "output_folder":"/data/saumgupta/simple-unet-2d/inference-output/topo"
+    }
+}

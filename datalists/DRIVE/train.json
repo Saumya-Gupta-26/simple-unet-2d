@@ -1,0 +1,22 @@
+{
+    "common":{
+        "task": "train",
+        "num_classes":1,
+        "img_folder": "/data/saumgupta/simple-unet-2d/data/DRIVE/training/images",
+        "gt_folder": "/data/saumgupta/simple-unet-2d/data/DRIVE/training/1st_manual",
+        "checkpoint_restore":"/data/saumgupta/simple-unet-2d/train-log/pretrain/model_best.pth"
+        },
+    "train":{
+        "train_datalist":"/data/saumgupta/simple-unet-2d/datalists/DRIVE/list-train.csv",
+        "validation_datalist":"/data/saumgupta/simple-unet-2d/datalists/DRIVE/list-val.csv",
+        "crop_size":128,
+        "train_batch_size":8,
+        "val_batch_size":1,
+        "output_folder":"/data/saumgupta/simple-unet-2d/train-log/topo",
+        "learning_rate":0.0001,
+        "num_epochs":1000,
+        "save_every": 50,
+        "topo_weight":0.0001,
+        "topo_window":128
+    }
+}

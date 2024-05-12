@@ -6,18 +6,19 @@ simple unet with NeurIPS'19 topoloss
 * Make sure to populate `train.json` and `test.json` with appropriate hyprerparameters
 
 **Train:**
-
+```
 CUDA_VISIBLE_DEVICES=3 python3 main.py --params ./datalists/DRIVE/train.json
+```
 * Ensure `crop_size` in `train.json` is divisible by 16
 
 **Test/Inference:**
-
+```
 CUDA_VISIBLE_DEVICES=4 python3 main.py --params ./datalists/DRIVE/test.json
-
+```
 **Compute Evaluation Metrics (Quantitative Results):**
-
-compute-eval-metrics.py
-
+```
+python3 compute-eval-metrics.py
+```
 **Dataset properties:**
 
 GT: Foreground should be 255 ; Background should be 0

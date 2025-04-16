@@ -1,4 +1,7 @@
 # Topoloss using CubicalRipser library
+'''
+In this code, we assume the GT has continuous values in [0,1] range. Hence the persistent dots in GT are not concentrated at (0,1) location, rather they are all throughout the diagram. In this case, we need wasserstein distance to match dots between GT and likelihood --- dots nearby to each other will be matched. This code is good for semi-supervised learning, where the GT is pseduo label (and hence is not binary). It's good for this paper: https://arxiv.org/pdf/2311.16447.
+'''
 
 from __future__ import print_function, division
 
